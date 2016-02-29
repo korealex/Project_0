@@ -13,9 +13,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
-
         Button spotify = (Button) findViewById(R.id.spotify_streamer);
         spotify.setOnClickListener(this);
 
@@ -34,19 +31,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button capstone = (Button) findViewById(R.id.capstone);
         capstone.setOnClickListener(this);
 
-
-
-
-
-
-
     }
 
     @Override
     public void onClick(View v) {
 
         Button b = (Button)v;
-
         Toast.makeText(MainActivity.this, "This button will launch my "+ b.getText()+" app!", Toast.LENGTH_SHORT).show();
 
     }
